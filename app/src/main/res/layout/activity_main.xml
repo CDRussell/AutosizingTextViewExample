@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.cdrussell.casterio.autoresizingtextviewexample.MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/smallLength"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="#1F7"
+        android:text="@string/shortString" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mediumLength"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="#1F7"
+        android:text="@string/medium_string" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/longLength"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="#1F7"
+        android:text="@string/super_long_string" />
+
+</LinearLayout>
