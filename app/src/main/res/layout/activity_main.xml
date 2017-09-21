@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:gravity="center_horizontal"
               tools:context="com.cdrussell.casterio.autoresizingtextviewexample.MainActivity">
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/smallLength"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:background="#1F7"
-        android:text="@string/shortString" />
+        android:background="#4C9"
+        android:text="@string/shortString"
+        app:autoSizeTextType="uniform"/>
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/mediumLength"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:background="#1F7"
-        android:text="@string/medium_string" />
+        android:background="#4C9"
+        android:text="@string/medium_string"
+        app:autoSizeTextType="uniform"/>
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/longLength"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:background="#1F7"
-        android:text="@string/super_long_string" />
+        android:background="#4C9"
+        android:text="@string/long_string"
+        app:autoSizeTextType="uniform"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:max="160"/>
 
 </LinearLayout>
