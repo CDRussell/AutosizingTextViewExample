@@ -1,6 +1,7 @@
 package com.cdrussell.casterio.autoresizingtextviewexample;
 
 import android.os.Bundle;
+import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         final TextView mediumText = findViewById(R.id.mediumLength);
         final TextView longText = findViewById(R.id.longLength);
 
-        //TextViewCompat.setAutoSizeTextTypeWithDefaults(shortText, TextViewCompat.AUTO_SIZE_TEXT_TYPE_UNIFORM);
+        // Example of setting auto-sizing programmatically
+        TextViewCompat.setAutoSizeTextTypeWithDefaults(shortText, TextViewCompat.AUTO_SIZE_TEXT_TYPE_UNIFORM);
 
         SeekBar seekBar = findViewById(R.id.seekBar);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
